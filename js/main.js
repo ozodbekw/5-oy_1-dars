@@ -216,37 +216,38 @@
 
 // #13
 
-let result = [];
+// let result = [];
+// const numbers = [5, 1, 2, 2, 5, 1];
 
-const reverseFunc = (arr) => {
-  arr.forEach((num) => {
-    result.push(num * -1);
-  });
-};
+// const reverseFunc = (arr) => {
+//   arr.forEach((num) => {
+//     result.push(num * -1);
+//   });
+// };
 
-reverseFunc(numbers);
+// reverseFunc(numbers);
 
-console.log(result);
+// console.log(result);
 
 // #14
 
-const fizzBuzzFunc = function (number) {
-  for (let i = 1; i <= number; i++) {
-    if (i % 3 == 0 && i % 5 == 0) {
-      result.push("FizzBuzz");
-    } else if (i % 5 == 0) {
-      result.push("Buzz");
-    } else if (i % 3 == 0) {
-      result.push("Fizz");
-    } else {
-      result.push(i);
-    }
-  }
-};
+// const fizzBuzzFunc = function (number) {
+//   for (let i = 1; i <= number; i++) {
+//     if (i % 3 == 0 && i % 5 == 0) {
+//       result.push("FizzBuzz");
+//     } else if (i % 5 == 0) {
+//       result.push("Buzz");
+//     } else if (i % 3 == 0) {
+//       result.push("Fizz");
+//     } else {
+//       result.push(i);
+//     }
+//   }
+// };
 
-fizzBuzzFunc(25);
+// fizzBuzzFunc(25);
 
-console.log(result);
+// console.log(result);
 
 //  #15
 
@@ -258,8 +259,7 @@ const personObj = {
   isMerried: false,
   job: "Programmer",
   haqida: function () {
-    return;
-    `Assalomu Alaykum, Mening ismim ${this.name}, Familyam ${
+    return `Assalomu Alaykum, Mening ismim ${this.name}, Familyam ${
       this.lastName
     }. Yoshim ${this.age}da. ${this.region}da yashayaman. ${
       this.job
@@ -268,3 +268,5 @@ const personObj = {
     }`;
   },
 };
+
+console.log(personObj.haqida());
